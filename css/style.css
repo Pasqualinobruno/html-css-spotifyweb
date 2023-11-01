@@ -12,7 +12,6 @@ body {
 .display {
     width: 100%;
     height: calc(100vh - 70px);
-
 }
 
 .container {
@@ -271,18 +270,18 @@ hr {
 .site_header {
     background-color: var(--spotify-primary);
     justify-content: end;
-    padding: 1.5rem 1rem;
+    padding:  1rem;
     align-items: center;
     margin-bottom: 1.5rem;
 
     & button {
         color: var(--spotify-white);
         text-transform: uppercase;
-        font-size: 14px;
+        font-size: 10px;
     }
 
     & button:hover {
-        font-size: 18px;
+        font-size: 14px;
     }
 }
 
@@ -325,13 +324,13 @@ main {
 
     & h5 {
         color: var(--spotify-white);
-        margin: 0.75rem 0;
-        font-size: 13px;
+        margin: 0.5rem 0;
+        font-size: 11px;
     }
 
     & p {
         color: var(--spotify-gray);
-        font-size: 11px;
+        font-size: 9px;
         margin: 0.5rem 0;
     }
 
@@ -348,7 +347,7 @@ main .container .row .col-2 {
     & i {
         position: absolute;
         left: 28%;
-        bottom: 76%;
+        bottom: 67%;
         font-size: 4rem;
         color: transparent;
 
