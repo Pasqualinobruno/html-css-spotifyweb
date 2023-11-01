@@ -405,6 +405,7 @@ footer {
     background-color: var(--spotify-secondary);
     position: fixed;
     bottom: 0;
+    left: 0;
 }
 
 .space {
