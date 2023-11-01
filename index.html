@@ -3,56 +3,239 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link
             href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700;900&display=swap"
             rel="stylesheet">
-        <title>Spotify</title>
-        <link rel="stylesheet" href="./css/style.css">
     </head>
-    <body class="debug ">
-        <div class="container d-flex">
-            <div class="menu"></div>
-            <div class="app">
-                <header>Lorem ipsum dolor sit amet consectetur, adipisicing
-                    elit. Dolore fugiat molestias nulla repellendus pariatur
-                    explicabo deserunt tenetur, nemo officia ullam vel eum,
-                    rerum omnis quo sunt odit dignissimos natus aspernatur.</header>
-                <main>
-                    <main class="container-sm">
-                        <div class="gender d-flex">
-                            <div>in evidenza</div>
-                            <div>podcast</div>
-                            <div>classifiche</div>
-                            <div>genere e moood</div>
-                            <div>nuove uscite</div>
-                            <div>scopri</div>
+    <body class>
+        <div class="display d-flex">
+            <div class="menu">
+                <div class="conatiner">
+                    <img class="logo" src="./img/logo.svg" alt>
+                    <img class="small" src="./img/logo-small.svg" alt>
+                    <div class="home">
+                        <img class="icons" src="./img/home.svg" alt>
+                        <div>Home</div>
+                    </div>
+                    <div class="research">
+                        <img class="icons" src="./img/search.svg" alt>
+                        <div>Cerca</div>
+                    </div>
+                    <div class="bookshelf">
+                        <img class="icons" src="./img/libreria.svg" alt>
+                        <div>La tua libreria</div>
+                    </div>
+                    <h3>Playlist</h3>
+                    <div class="playlist">
+                        <div><i class="fa-solid fa-plus back-col-gray"></i>
+                            <div>Crea Playlist</div>
                         </div>
-                        <div class="music">
-                            <h3>Recently played</h3>
-                            <div class="row">
-                                <div class="col-2">Lorem, ipsum dolor.</div>
-                                <div class="col-2">Lorem, ipsum dolor.</div>
-                                <div class="col-2">Lorem, ipsum dolor.</div>
-                                <div class="col-2">Lorem, ipsum dolor.</div>
-                                <div class="col-2">Lorem, ipsum dolor.</div>
-                                <div class="col-2">Lorem, ipsum dolor.</div>
+                        <div class="name">
+                            <div>Nome Playlist</div>
+                            <div>Nome Playlist</div>
+                            <div>Nome Playlist</div>
+                            <div>Nome Playlist</div>
+                            <div>Nome Playlist</div>
+                            <div>Nome Playlist</div>
+                            <div>Nome Playlist</div>
+                        </div>
+                        <div class="margin-top-7 ">
+                            <div
+                                class="download d-flex aling-items-center">
+                                <img class="icons" src="./img/download.svg" alt>
+                                <div>Installa app</div>
                             </div>
-                            <h3>Creato per John Doe</h3>
-                            <p>Piu ascoltati,piu accurati saranno i suggerimenti</p>
+                            <hr class="mg-bot-05">
+                            <div class="user">
+                                <img class="icons gray border-radius-50" src="./img/profile.svg" alt>
+                                <div>John Doe</div>
+                            </div>
+            </div>        
+
                         </div>
+                        <main>
+                            <header class="site_header d-flex">
 
-                    </main>
-                </main>
+                                <button class="btn">effettua l'upgrade</button>
 
-            </div>
-        </div>
-        <footer>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-            inventore atque sit molestias quidem nulla ex
-            sint
-            dolorum sed. Dolor reiciendis a consequatur. Ipsum ad odit
-            aspernatur sequi, ratione deleniti.</footer>
+                            </header>
+                            <div class="genered d-flex">
+                                <div>in evidenza</div>
+                                <div>podcast</div>
+                                <div>classifiche</div>
+                                <div>generi e mood</div>
+                                <div>nuove uscite</div>
+                                <div>scopri</div>
+                            </div>
 
-    </body>
-</html>
+                            <div class="container">
+                                <h3>Recently played</h3>
+                                <div class="row">
+                                    <div class="col-2 col-md-3 col-s-6">
+                                        <img src="./img/metal_lifting.jpg" alt>
+                                        <i
+                                            class="fa-regular fa-circle-play fa-2xl play"></i>
+                                        <h5>Heavy Metal</h5>
+                                        <p>Subtitle</p>
+                                    </div>
+                                    <div class="col-2 col-md-3 col-s-6">
+                                        <img src="./img/stranger.jpeg" alt>
+                                        <i
+                                            class="fa-regular fa-circle-play fa-2xl"></i>
+                                        <h5>Stranger Things, Vol.
+                                            1(a Netflix Original Series
+                                            Soundtrack)</h5>
+                                        <p>Kyle Dixon & Michael Stein</p>
+                                    </div>
+                                    <div class="col-2 col-md-3 col-s-6">
+                                        <img src="./img/aquietplace.jpeg" alt>
+                                        <i
+                                            class="fa-regular fa-circle-play fa-2xl play"></i>
+                                        <h5>A quiet place</h5>
+                                        <p>Subtitle</p>
+                                    </div>
+                                    <div class="col-2 col-md-3 col-s-6">
+                                        <img src="./img/split.jpeg" alt>
+                                        <i
+                                            class="fa-regular fa-circle-play fa-2xl play"></i>
+                                        <h5>Split</h5>
+                                        <p>Subtitle</p>
+                                    </div>
+                                    <div class="col-2 col-md-3 col-s-6">
+                                        <img src="./img/cure.jpeg" alt>
+                                        <i
+                                            class="fa-regular fa-circle-play fa-2xl play"></i>
+                                        <h5>A cure for wellness</h5>
+                                        <p>Subtitle</p>
+                                    </div>
+                                    <div class="col-2 col-md-3 col-s-6">
+                                        <img src="./img/sinister.jpeg" alt>
+                                        <i
+                                            class="fa-regular fa-circle-play fa-2xl play"></i>
+                                        <h5>Sinister</h5>
+                                        <p>Subtitle</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <h3>Creato per John Doe</h3>
+                                <p>Più ascolti,più accurati saranno i
+                                    suggerimenti.</p>
+                                <div class="row">
+                                    <div class="col-2 col-md-3 col-s-6">
+                                        <img src="./img/radar.jpeg" alt>
+                                        <h5>Release Radar</h5>
+                                    </div>
+                                    <div class="col-2 col-md-3 col-s-6">
+                                        <img src="./img/mixdaily.jpeg" alt>
+                                        <h5>Dally Mix 1</h5>
+                                    </div>
+                                    <div class="col-2"></div>
+                                    <div class="col-2"></div>
+                                    <div class="col-2"></div>
+                                    <div class="col-2"></div>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <h3>Artisti più popolari</h3>
+                                <p>Più ascolti,più accurati saranno i
+                                    suggerimenti.</p>
+                                <div class="row">
+                                    <div class="col-2 col-md-3 col-s-6">
+                                        <img class="circle"
+                                            src="./img/youg.jpeg" alt>
+                                    </div>
+                                    <div class="col-2 col-md-3 col-s-6">
+                                        <img class="circle"
+                                            src="./img/einaudi.jpeg" alt>
+                                    </div>
+                                    <div class="col-2"></div>
+                                    <div class="col-2"></div>
+                                    <div class="col-2"></div>
+                                    <div class="col-2"></div>
+                                </div>
+                            </div>
+                        </main>
+                    </div>
+                    <footer>
+                        <div class="space">
+                            <div class="left">
+                                <img class="live" src="./img/sinister.jpeg" alt>
+                                <div class="song">
+                                    <h5>Sinister</h5>
+                                    <p>Brano Nome</p>
+                                </div>
+                                <div class="d-flex-s">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <i class="fa-regular fa-folder"></i>
+                                </div>
+
+                            </div>
+                            <div class="center d-flex">
+                                <div class="commands">
+                                    <i class="fa-solid fa-shuffle"
+                                        style="color: #edf1f1;"></i>
+                                    <i class="fa-solid fa-backward-step"
+                                        style="color: #edf1f1;"></i>
+                                    <i class="fa-regular fa-circle-play"
+                                        style="color: #edf1f1;"></i>
+                                    <i class="fa-solid fa-forward-step"
+                                        style="color: #edf1f1;"></i>
+                                    <i class="fa-solid fa-rotate-left"
+                                        style="color: #edf1f1;"></i>
+                                </div>
+                                <div class="duration">
+                                    <div>0:25</div>
+                                    <hr>
+                                    <div>4:35</div>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <i class="fa-solid fa-bars fa-xs"
+                                    style="color: #ffffff;"></i>
+                                <i class="fa-solid fa-display fa-xs"
+                                    style="color: #ffffff;"></i>
+                                <i class="fa-solid fa-volume-high fa-xs"
+                                    style="color: #ffffff;"></i>
+                                <hr>
+                            </div>
+
+                        </div>
+                    </footer>
+
+                </body>
+            </html>
+            <h3>Playlist</h3>
+<div class="playlist">
+    <div><i class="fa-solid fa-plus back-col-gray"></i>
+    <div>Crea Playlist</div>
+</div>
+<div class="name">
+    <div>Nome Playlist</div>
+    <div>Nome Playlist</div>
+    <div>Nome Playlist</div>
+    <div>Nome Playlist</div>
+    <div>Nome Playlist</div>
+    <div>Nome Playlist</div>
+    <div>Nome Playlist</div>
+</div>
+<div class="margin-top-7 ">
+    <div
+        class="download d-flex aling-items-center">
+        <img class="icons" src="./img/download.svg" alt>
+        <div>Installa app</div>
+    </div>
+    <hr class="mg-bot-05">
+    <div class="user">
+        <img class="icons gray
+        border-radius-50" src="./img/profile.svg" alt>
+        <div>John Doe</div>
+    </div>
