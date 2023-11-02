@@ -126,7 +126,7 @@ img {
     background-color: var(--spotify-dark);
     width: 200px;
     color: white;
-    overflow-y: auto;
+    overflow-y: hidden;
     padding: 1rem;
 
     & h2 {
@@ -526,6 +526,10 @@ footer {
         flex-wrap: wrap;
         gap: 1.5rem;
     }
+    .menu
+    .home, .research, .bookshelf, .playlist, .download{
+        padding: 0.3rem 0;
+    }
 
     main .container .row .col-2 {
         & i {
@@ -535,7 +539,7 @@ footer {
     }
 
     .margin-top-7 {
-        margin-top: 27rem
+        margin-top: 0;
     }
 
     .right {
@@ -565,6 +569,11 @@ footer {
 
     .col-s-6 {
         width: calc((100%/12)*6);
+    }
+    .menu{
+        & .bookshelf{
+            padding: 0.3rem 0;
+        }
     }
     .site_header{
         & button{
@@ -605,7 +614,7 @@ footer {
         gap: 1rem;
     }
     .margin-top-7{
-        margin-top: 27rem;
+        margin-top: 0rem;
     }
 }
 @media screen and (max-width: 380px){
@@ -681,5 +690,12 @@ footer {
     
 
 }
+
+/*@media screen and (max-width: 350px){
+    main .container{
+        display: none;
+    }
+
+}*/
 
 /*#endregion media*/
