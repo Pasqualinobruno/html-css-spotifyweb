@@ -135,6 +135,32 @@ img {
         margin-bottom: 1rem;
     }
 
+    .home {
+        & div{
+            position: relative;
+        }
+
+        & div:after{
+            content: "";
+            position: absolute;
+            background-color: var(--spotify-green);
+            height: 100%;
+            width: 2px;
+            left: -22px;
+            bottom: -0.5px;
+            transition: 0.3s;
+        }
+        & div:after:hover{
+            height: 80%;
+        }
+        
+        
+        
+    }
+     
+    
+    
+
     .home,
     .research,
     .bookshelf,
@@ -258,7 +284,8 @@ hr {
         background-color: var(--spotify-white);
     }
 }
-.small{
+
+.small {
     display: none;
 }
 
@@ -270,7 +297,7 @@ hr {
 .site_header {
     background-color: var(--spotify-primary);
     justify-content: end;
-    padding:  1rem;
+    padding: 1rem;
     align-items: center;
     margin-bottom: 1.5rem;
 
@@ -307,6 +334,22 @@ main {
     & div {
         color: var(--spotify-gray);
         text-transform: uppercase;
+        position: relative;
+    }
+
+    & div:after {
+        content: "";
+        position: absolute;
+        background-color: var(--spotify-green);
+        height: 3px;
+        width: 0;
+        left: 0;
+        bottom: -10px;
+        transition: 0.3s;
+    }
+
+    & div:hover:after {
+        width: 100%;
     }
 }
 
@@ -372,27 +415,6 @@ main .container .row .col-2 {
 .circle {
     border-radius: 50%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*#endregion main*/
 
@@ -486,6 +508,10 @@ footer {
         color: var(--spotify-gray);
         background: var(--spotify-gray);
         height: 2px;
+        transition: 0,5s;
+    }
+    & hr:hover{
+        background-color: var(--spotify-green);
     }
 }
 
@@ -497,6 +523,11 @@ footer {
     & hr {
         height: 3px;
         width: 300px;
+        transition: 0,5s;
+
+    }
+    & hr:hover{
+        background-color: var(--spotify-green);
     }
 
     & div {
@@ -526,8 +557,12 @@ footer {
         flex-wrap: wrap;
         gap: 1.5rem;
     }
-    .menu
-    .home, .research, .bookshelf, .playlist, .download{
+
+    .menu .home,
+    .research,
+    .bookshelf,
+    .playlist,
+    .download {
         padding: 0.3rem 0;
     }
 
@@ -551,8 +586,9 @@ footer {
             width: 200px;
         }
     }
-    .left{
-        & .song{
+
+    .left {
+        & .song {
             padding: 0.2rem 0 0 0;
         }
     }
@@ -570,16 +606,19 @@ footer {
     .col-s-6 {
         width: calc((100%/12)*6);
     }
-    .menu{
-        & .bookshelf{
+
+    .menu {
+        & .bookshelf {
             padding: 0.3rem 0;
         }
     }
-    .site_header{
-        & button{
-           font-size: 7px;
+
+    .site_header {
+        & button {
+            font-size: 7px;
         }
-        & .btn{
+
+        & .btn {
             padding: 0.5rem 1.5rem;
         }
     }
@@ -610,84 +649,104 @@ footer {
 
 
     }
-    .space{
+
+    .space {
         gap: 1rem;
     }
-    .margin-top-7{
+
+    .margin-top-7 {
         margin-top: 0rem;
     }
 }
-@media screen and (max-width: 380px){
-    .logo{
+
+@media screen and (max-width: 380px) {
+    .logo {
         display: none;
     }
-    .small{
+
+    .small {
         display: block;
         height: 20px;
     }
-    .site_header{
+
+    .site_header {
         padding: 0.5rem;
-        & button{
+
+        & button {
             font-size: 7px;
         }
-        & .btn{
+
+        & .btn {
             padding: 0.5rem 1.5rem;
         }
     }
-    .menu{
+
+    .menu {
         padding: 0.25rem;
         width: auto;
 
-        & .home div{
+        & .home div {
             display: none;
         }
     }
-    .menu{
-        & .research div{
+
+    .menu {
+        & .research div {
             display: none;
         }
     }
-    .menu{
-        & .bookshelf div{
+
+    .menu {
+        & .bookshelf div {
             display: none;
         }
-        & h3{
+
+        & h3 {
             display: none;
         }
     }
-    .playlist div{
+
+    .playlist div {
         display: none;
     }
-    .name div{
+
+    .name div {
         display: none;
     }
-    
-    .margin-top-7 hr{
+
+    .margin-top-7 hr {
         display: none;
     }
-    .margin-top-7{
+
+    .margin-top-7 {
         margin-top: 12rem;
     }
-    .download div{
+
+    .download div {
         display: none;
     }
-    .user div{
+
+    .user div {
         display: none;
     }
-    .genered{
+
+    .genered {
         font-size: 7px;
 
     }
-    .duration hr{
+
+    .duration hr {
         width: 67px;
     }
-    .commands{
+
+    .commands {
         width: 121px;
     }
-    .right{
+
+    .right {
         width: 92px;
     }
-    
+
 
 }
 
