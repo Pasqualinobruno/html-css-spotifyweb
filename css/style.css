@@ -547,6 +547,11 @@ footer {
             width: 200px;
         }
     }
+    .left{
+        & .song{
+            padding: 0.2rem 0 0 0;
+        }
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -560,6 +565,14 @@ footer {
 
     .col-s-6 {
         width: calc((100%/12)*6);
+    }
+    .site_header{
+        & button{
+           font-size: 7px;
+        }
+        & .btn{
+            padding: 0.5rem 1.5rem;
+        }
     }
 
     .genered {
@@ -594,11 +607,6 @@ footer {
     .margin-top-7{
         margin-top: 27rem;
     }
-    .site_header{
-        & button{
-            font-size: 11px;
-        }
-    }
 }
 @media screen and (max-width: 380px){
     .logo{
@@ -608,7 +616,19 @@ footer {
         display: block;
         height: 20px;
     }
+    .site_header{
+        padding: 0.5rem;
+        & button{
+            font-size: 7px;
+        }
+        & .btn{
+            padding: 0.5rem 1.5rem;
+        }
+    }
     .menu{
+        padding: 0.25rem;
+        width: auto;
+
         & .home div{
             display: none;
         }
@@ -622,7 +642,43 @@ footer {
         & .bookshelf div{
             display: none;
         }
+        & h3{
+            display: none;
+        }
     }
+    .playlist div{
+        display: none;
+    }
+    .name div{
+        display: none;
+    }
+    
+    .margin-top-7 hr{
+        display: none;
+    }
+    .margin-top-7{
+        margin-top: 12rem;
+    }
+    .download div{
+        display: none;
+    }
+    .user div{
+        display: none;
+    }
+    .genered{
+        font-size: 7px;
+
+    }
+    .duration hr{
+        width: 67px;
+    }
+    .commands{
+        width: 121px;
+    }
+    .right{
+        width: 92px;
+    }
+    
 
 }
 
