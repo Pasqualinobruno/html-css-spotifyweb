@@ -529,13 +529,13 @@ footer {
 
     main .container .row .col-2 {
         & i {
-            left: 31%;
-            bottom: 75%;
+            left: 29%;
+            bottom: 71%;
         }
     }
 
     .margin-top-7 {
-        margin-top: 18.5rem
+        margin-top: 27rem
     }
 
     .right {
@@ -550,9 +550,9 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
-    .d-flex-s {
+    /*.d-flex-s {
         display: flex;
-    }
+    }*/
 
     .col-s-2 {
         width: calc((100%/12)*2);
@@ -592,7 +592,7 @@ footer {
         gap: 1rem;
     }
     .margin-top-7{
-        margin-top: 16.5rem;
+        margin-top: 27rem;
     }
     .site_header{
         & button{
