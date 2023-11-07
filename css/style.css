@@ -126,7 +126,7 @@ img {
     background-color: var(--spotify-dark);
     width: 200px;
     color: white;
-    overflow-y: hidden;
+    overflow-y: auto;
     padding: 1rem;
 
     & h2 {
@@ -489,6 +489,10 @@ footer {
     display: flex;
     gap: 1rem;
     margin-bottom: 0.5rem;
+
+    & .fa-circle-play:hover{
+     
+    }
 
     & .fa-circle-play:hover {
         font-size: 20px;
